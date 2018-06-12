@@ -1,0 +1,215 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "RGB Led"
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L IRLB8721PBF Qr
+U 1 1 59CE1393
+P 2100 1350
+F 0 "Qr" H 2350 1425 50  0000 L CNN
+F 1 "IRLB8721PBF" H 2350 1350 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Neutral123_Vertical" H 2350 1275 50  0001 L CIN
+F 3 "" H 2100 1350 50  0000 L CNN
+	1    2100 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L IRLB8721PBF Qg
+U 1 1 59CE1416
+P 2100 1900
+F 0 "Qg" H 2350 1975 50  0000 L CNN
+F 1 "IRLB8721PBF" H 2350 1900 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Neutral123_Vertical" H 2350 1825 50  0001 L CIN
+F 3 "" H 2100 1900 50  0000 L CNN
+	1    2100 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L IRLB8721PBF Qb
+U 1 1 59CE1491
+P 2100 2450
+F 0 "Qb" H 2350 2525 50  0000 L CNN
+F 1 "IRLB8721PBF" H 2350 2450 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Neutral123_Vertical" H 2350 2375 50  0001 L CIN
+F 3 "" H 2100 2450 50  0000 L CNN
+	1    2100 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L R Rr
+U 1 1 59CE14AC
+P 1750 1400
+F 0 "Rr" V 1830 1400 50  0000 C CNN
+F 1 "1k" V 1750 1400 50  0000 C CNN
+F 2 "" V 1680 1400 50  0000 C CNN
+F 3 "" H 1750 1400 50  0000 C CNN
+	1    1750 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L R Rg
+U 1 1 59CE153F
+P 1750 1950
+F 0 "Rg" V 1830 1950 50  0000 C CNN
+F 1 "1k" V 1750 1950 50  0000 C CNN
+F 2 "" V 1680 1950 50  0000 C CNN
+F 3 "" H 1750 1950 50  0000 C CNN
+	1    1750 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L R Rb
+U 1 1 59CE155E
+P 1750 2500
+F 0 "Rb" V 1830 2500 50  0000 C CNN
+F 1 "1k" V 1750 2500 50  0000 C CNN
+F 2 "" V 1680 2500 50  0000 C CNN
+F 3 "" H 1750 2500 50  0000 C CNN
+	1    1750 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X04 P3
+U 1 1 59CE1664
+P 3600 1150
+F 0 "P3" H 3600 1400 50  0000 C CNN
+F 1 "CONN_01X04" V 3700 1150 50  0000 C CNN
+F 2 "" H 3600 1150 50  0000 C CNN
+F 3 "" H 3600 1150 50  0000 C CNN
+	1    3600 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X04 P1
+U 1 1 59CE1A4D
+P 1050 2000
+F 0 "P1" H 1050 2250 50  0000 C CNN
+F 1 "CONN_01X04" V 1150 2000 50  0000 C CNN
+F 2 "" H 1050 2000 50  0000 C CNN
+F 3 "" H 1050 2000 50  0000 C CNN
+	1    1050 2000
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 1400 1600 1850
+Wire Wire Line
+	1600 1850 1250 1850
+Wire Wire Line
+	1250 1950 1600 1950
+Wire Wire Line
+	1250 2050 1600 2050
+Wire Wire Line
+	1600 2050 1600 2500
+$Comp
+L CONN_01X02 P2
+U 1 1 59CE26EF
+P 1050 1350
+F 0 "P2" H 1050 1500 50  0000 C CNN
+F 1 "CONN_01X02" V 1150 1350 50  0000 C CNN
+F 2 "" H 1050 1350 50  0000 C CNN
+F 3 "" H 1050 1350 50  0000 C CNN
+	1    1050 1350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 1400 1350 1400
+Wire Wire Line
+	1350 1400 1350 2700
+Wire Wire Line
+	1250 2150 2200 2150
+$Comp
+L GNDD #PWR?
+U 1 1 59CE2858
+P 1350 2700
+F 0 "#PWR?" H 1350 2450 50  0001 C CNN
+F 1 "GNDD" H 1350 2550 50  0000 C CNN
+F 2 "" H 1350 2700 50  0000 C CNN
+F 3 "" H 1350 2700 50  0000 C CNN
+	1    1350 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR?
+U 1 1 59CE287E
+P 1250 1000
+F 0 "#PWR?" H 1250 850 50  0001 C CNN
+F 1 "+12V" H 1250 1140 50  0000 C CNN
+F 2 "" H 1250 1000 50  0000 C CNN
+F 3 "" H 1250 1000 50  0000 C CNN
+	1    1250 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 1300 1250 1000
+Wire Wire Line
+	1250 1000 3400 1000
+Connection ~ 1250 1000
+Connection ~ 1350 2150
+Connection ~ 1850 1950
+Wire Wire Line
+	2200 2150 2200 2100
+Wire Wire Line
+	2200 1550 1350 1550
+Connection ~ 1350 1550
+Wire Wire Line
+	1350 2700 2200 2700
+Wire Wire Line
+	2200 2700 2200 2650
+Connection ~ 1350 2700
+Wire Wire Line
+	2200 1200 2200 1100
+Wire Wire Line
+	2200 1100 3400 1100
+Wire Wire Line
+	2200 1700 3000 1700
+Wire Wire Line
+	3000 1700 3000 1200
+Wire Wire Line
+	3000 1200 3400 1200
+Wire Wire Line
+	2200 2250 3150 2250
+Wire Wire Line
+	3150 2250 3150 1300
+Wire Wire Line
+	3150 1300 3400 1300
+$EndSCHEMATC
